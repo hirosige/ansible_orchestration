@@ -1,0 +1,8 @@
+- name: install the latest version of Apache
+  yum: name=httpd state=latest
+
+- name: install the latest version of PHP
+  yum: name=php state=latest
+
+- name: install the latest version of mariadb
+  yum: name=mariadb state=latest

@@ -1,0 +1,5 @@
+---
+- hosts: mhmt_servers
+  become: yes
+  roles:
+    - initial
