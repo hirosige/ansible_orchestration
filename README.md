@@ -27,6 +27,7 @@ exit
 
 ### 3. install ansible in ansible_srv
 ```shell
+vagrant ssh ansible_srv
 sudo yum install -y epel-release
 sudo yum install -y ansible vim
 ```
@@ -71,7 +72,10 @@ exit
 ※ this time should be successfully done
 
 ```
+vagrant ssh ansible_srv
 ansible-playbook -i inventory.txt playbook.yml
+
+exit
 ```
 
 ### 7. check package installed or not
@@ -96,4 +100,4 @@ Copyright (c) 1997-2013 The PHP Group
 Zend Engine v2.4.0, Copyright (c) 1998-2013 Zend Technologies
 ```
 
-Congratulations
+Congratulations!
